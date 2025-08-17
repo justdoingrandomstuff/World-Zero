@@ -2,6 +2,6 @@
 
   <p align="center">
     Might take a little bit to load
-```lua
+```
     loadstring(game:HttpGet("https://raw.githubusercontent.com/justdoingrandomstuff/World-Zero/refs/heads/main/autofarm"))()
 ```
