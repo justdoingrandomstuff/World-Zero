@@ -1,5 +1,4 @@
-<div align="center">
-  <h3 align="center">✅ Works!</h3>
+## ✅ Works!
   
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/justdoingrandomstuff/World-Zero/refs/heads/main/autofarm"))()
