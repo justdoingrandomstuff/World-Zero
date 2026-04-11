@@ -3,7 +3,7 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@justdoingrandomstufflol)
 > Regularly updated, feature rich script with a huge range of customizability and flexibility for (hopefully) everything you could want!
 <p align="center">
-  <img src="https://github.com/justdoingrandomstuff/b/blob/main/scriptimage.png" alt="Preview" />
+  <img src="https://github.com/justdoingrandomstuff/World-Zero/blob/main/scriptimage.png" alt="Preview" />
 </p>
 
 ```bash
