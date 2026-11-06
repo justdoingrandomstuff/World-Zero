@@ -5027,6 +5027,7 @@ FirstTab:AddDropdown("UnloadTabDropdown", {
 FirstTab:AddButton({
     Text = "Stop script from executing",
     Func = function()
+        print("running delete")
         local FileName = "JDRS/AutoExecute"
         if isfile(FileName) then
             delfile(FileName)
@@ -7721,7 +7722,10 @@ end
 SetGlobal("clean up script")
 function CleanUpScript()
     for Index in Toggles do
-        Toggles[tostring(Index)]:SetValue(false) -- safely turn off all toggles
+        local StringIndex = tostring(Index)
+        if not string.find(StringIndex, "AutoScriptToggle") then
+            Toggles[tostring(Index)]:SetValue(false) -- safely turn off all toggles
+        end
     end
     for Index in Options do
         local StringIndex = tostring(Index)
