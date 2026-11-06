@@ -643,18 +643,17 @@ local function RequestMessage(WebsiteLink, MessageContent, HighRiskRequest)
         warn("No webhook link provided")
         return
     end
-        if not EF.SendRequest then
-            return
-        end
-        EF.SendRequest({
-            Url = WebsiteLink,
-            Method = "POST",
-            Headers = {
-                ["Content-Type"] = "application/json"
-            },
-            Body = HttpService:JSONEncode(MessageContent)
-        })
-    end)
+    if not EF.SendRequest then
+        return
+    end
+    EF.SendRequest({
+        Url = WebsiteLink,
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
+        Body = HttpService:JSONEncode(MessageContent)
+    })
 end
 
 SetGlobal("save error to file")
@@ -3074,7 +3073,6 @@ local function CreateToggles(ToggleTable)
             Default = if Data.Button then nil else false,
             Tooltip = Data.Tooltip or nil
         }
-Default = if Data.Button then nil elseif Data.DefaultOn then true else false,
         if Data.AttachedFunction then
             if not Data.Button then
                 DataTable.Callback = function(ChangedValue)
